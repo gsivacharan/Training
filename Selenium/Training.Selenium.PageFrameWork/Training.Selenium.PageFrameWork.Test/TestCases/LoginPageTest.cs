@@ -22,19 +22,33 @@ namespace Training.Selenium.PageFrameWork.Test.TestCases
         }
 
         [Test]
-        public void ValidateLoginTtitle()
+        public void ClickOnLoginButtonWithNoUserName()
         {
-            var loginTitle = _loginPage.ValidateLoginPageTitle();
-            Assert.AreEqual(loginTitle, "#1 Free CRM for Any Business: Online Customer Relationship Software");
+            var res = _loginPage.ValidateWithNoUserName(base.GetKeyValue("password"));
+            Assert.That(res, Is.True, "ClickOnLoginButtonWithNoUserName Failed.");
         }
 
         [Test]
-        public void ValidateLogoImageExisits()
+        public void ClickOnLoginButtonWithNoPassWord()
         {
-            var imageExists = _loginPage.ValidateCrmImage();
-            Assert.AreEqual(imageExists,true);
+            var res = _loginPage.ValidateWithNoPassword(base.GetKeyValue("username"));
+            Assert.That(res, Is.True, "ValidateWithNoPassword Failed.");
         }
 
+        [Test]
+        public void ClickOnLoginWithNoUserNameAndPassword()
+        {
+            var res = _loginPage.ValidateWithNoUserNameAndPassword();
+            Assert.That(res, Is.True, "ClickOnLoginWithNoUserNameAndPassword Failed.");
+        }
+
+        [Test]
+        public void ClickOnLoginButton()
+        {
+            var res = _loginPage.validateLoginWithRightValues(base.GetKeyValue("username"), base.GetKeyValue("password"));
+            StringAssert.Contains(base.GetKeyValue("userloginname"), res, "ClickOnLoginWithNoUserNameAndPassword Failed.");
+        }
+        
         [Test]
         public void LoginTest()
         {

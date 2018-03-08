@@ -84,6 +84,11 @@ namespace Training.Selenium.PageFrameWork.Helper
             var appSettings = new AppSettingsReader();
             return (string) appSettings.GetValue(key, typeof(string));
         }
-        
+
+        public void SwitchToMainFrame()
+        {
+            Driver.SwitchTo().Frame("mainpanel");
+        }
+
     }
 }

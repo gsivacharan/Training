@@ -1,12 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using java.lang;
+﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using Training.Selenium.PageFrameWork.Helper;
-using Boolean = System.Boolean;
+using System.Threading;
 
 namespace Training.Selenium.PageFrameWork.Pages
 {
@@ -14,66 +10,89 @@ namespace Training.Selenium.PageFrameWork.Pages
     {
         // Page Factory
 
-        [FindsBy(How = How.Name, Using = "username")]
-        private IWebElement UserNamElement;
+        [FindsBy(How = How.Name, Using = "username")] private IWebElement userNameInput;
 
-        [FindsBy(How = How.Name, Using = "password")]
-        private IWebElement UserPasswordElement;
+        [FindsBy(How = How.Name, Using = "password")] private IWebElement passwordInput;
 
-        [FindsBy(How = How.XPath, Using = "//input[@type=\"submit\"]")]
-        private IWebElement LoginButtonElement;
+        [FindsBy(How = How.XPath, Using = "//input[@type=\"submit\"]")] private IWebElement loginButton;
 
-        [FindsBy(How=How.XPath,Using = "//a[@href=\"https://www.freecrm.com/login.cfm?pr=1\"]")]
-        private IWebElement ForgotPasswordElement;
+        [FindsBy(How = How.XPath, Using = "//a[@href=\"https://www.freecrm.com/login.cfm?pr=1\"]")] private IWebElement
+            ForgotPasswordElement;
 
-        [FindsBy(How= How.XPath, Using = "//button[contains(text(),\"Sign Up\")]")]
-        private IWebElement SignUpElement;
+        [FindsBy(How = How.XPath, Using = "//button[contains(text(),\"Sign Up\")]")] private IWebElement SignUpElement;
 
-        [FindsBy(How = How.ClassName, Using = "img-responsive")]
-        private IWebElement LogoElement;
+        [FindsBy(How = How.ClassName, Using = "img-responsive")] private IWebElement LogoElement;
 
-        [FindsBy(How = How.XPath, Using= "//a[contains(text(),\"Features\")]")]
-        private IWebElement FeaturElement;
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Features\")]")] private IWebElement FeaturElement;
 
-        [FindsBy(How = How.XPath,Using = "//a[contains(text(),\"Sign Up\")]")]
-        private IWebElement MenuSingElement;
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Sign Up\")]")] private IWebElement MenuSingElement;
 
-        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Pricing\")]")]
-        private IWebElement PricingElement;
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Pricing\")]")] private IWebElement PricingElement;
 
-        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Customers\")]")]
-        private IWebElement CustomerElement;
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Customers\")]")] private IWebElement CustomerElement;
 
-        [FindsBy(How = How.XPath,Using = "//a[contains(text(),\"Contact\")]")]
-        private IWebElement ContactElement;
-        
-        
+        [FindsBy(How = How.XPath, Using = "//a[contains(text(),\"Contact\")]")] private IWebElement ContactElement;
+
+
         public LoginPage()
         {
-            PageFactory.InitElements(Driver,this);
+            PageFactory.InitElements(Driver, this);
         }
 
         //Actions
-        public string ValidateLoginPageTitle()
+        public bool ValidateWithNoUserName(string password)
         {
-            return Driver.Title;
+            passwordInput.Clear();
+            passwordInput.SendKeys(password);
+            loginButton.Click();
+            return Driver.Url.Contains("e=1") ? true : false;
         }
 
-        public Boolean ValidateCrmImage()
+        public bool ValidateWithNoPassword(string username)
         {
-            return LogoElement.Displayed;
+            userNameInput.Clear();
+            userNameInput.SendKeys(username);
+            loginButton.Click();
+            return Driver.Url.Contains("e=1") ? true : false;
         }
 
-        public HomePage Login(string userName, string password)
+        public bool ValidateWithNoUserNameAndPassword()
         {
-            UserNamElement.Clear();
-            UserNamElement.SendKeys(userName);
+            loginButton.Click();
+            return Driver.Url.Contains("e=1") ? true : false;
+        }
 
-            UserPasswordElement.Clear();
-            UserPasswordElement.SendKeys(password);
+        public string validateLoginWithRightValues(string username, string password)
+        {
+            userNameInput.Clear();
+            userNameInput.SendKeys(username);
 
-            Thread.sleep(1000);
-            LoginButtonElement.Click();
+            passwordInput.Clear();
+            passwordInput.SendKeys(password);
+
+            Thread.Sleep(TimeSpan.FromSeconds(10));
+
+            loginButton.Click();
+
+            base.SwitchToMainFrame();
+            Thread.Sleep(TimeSpan.FromSeconds(10));
+
+            return
+                Driver.FindElement(By.XPath("//td[@class=\"headertext\" and contains(text(),\"siva gavvala\")]")).Text;
+        }
+
+        public HomePage Login(string username, string password)
+        {
+            userNameInput.Clear();
+            userNameInput.SendKeys(username);
+
+            passwordInput.Clear();
+            passwordInput.SendKeys(password);
+
+            Thread.Sleep(TimeSpan.FromSeconds(10));
+
+            loginButton.Click();
+
             return new HomePage();
         }
     }

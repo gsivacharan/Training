@@ -27,7 +27,7 @@ namespace Training.Selenium.PageFrameWork.Test.TestCases
             util = new Util();
             HomePage homepage = loginPage.Login("sivacharan", "friend");
             Log.InfoFormat("Username = '{0}' and Password = '{1}' as passed.", "sivacharan","friend");
-            util.switchToMainFrame();
+            base.SwitchToMainFrame();
             Log.Info("Switch to IFrame");
             companyPage = homepage.ClickCompanyLink();
             Log.Info("Clicked on Company Menu Link.");
