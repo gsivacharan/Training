@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.Selenium.PageFrameWork", "Training.Selenium.PageFrameWork\Training.Selenium.PageFrameWork.csproj", "{52A1F449-FAEA-495D-839F-EC0E7C6DF482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.Selenium.PageFrameWork.Test", "Training.Selenium.PageFrameWork.Test\Training.Selenium.PageFrameWork.Test.csproj", "{94DCC858-764C-4332-8AD3-A1FF8D9D9CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52A1F449-FAEA-495D-839F-EC0E7C6DF482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A1F449-FAEA-495D-839F-EC0E7C6DF482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A1F449-FAEA-495D-839F-EC0E7C6DF482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A1F449-FAEA-495D-839F-EC0E7C6DF482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DCC858-764C-4332-8AD3-A1FF8D9D9CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DCC858-764C-4332-8AD3-A1FF8D9D9CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DCC858-764C-4332-8AD3-A1FF8D9D9CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DCC858-764C-4332-8AD3-A1FF8D9D9CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

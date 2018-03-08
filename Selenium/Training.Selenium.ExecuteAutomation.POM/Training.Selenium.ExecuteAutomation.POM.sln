@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.Selenium.ExecuteAutomation.POM", "Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM.csproj", "{19EEBB18-2E49-4D83-B89D-8BC0973D3FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.Selenium.ExecuteAutomation.POM.Test", "Training.Selenium.ExecuteAutomation.POM.Test\Training.Selenium.ExecuteAutomation.POM.Test.csproj", "{50AB363B-C590-4714-9156-0E9DC24D2E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19EEBB18-2E49-4D83-B89D-8BC0973D3FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EEBB18-2E49-4D83-B89D-8BC0973D3FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EEBB18-2E49-4D83-B89D-8BC0973D3FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EEBB18-2E49-4D83-B89D-8BC0973D3FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AB363B-C590-4714-9156-0E9DC24D2E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AB363B-C590-4714-9156-0E9DC24D2E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AB363B-C590-4714-9156-0E9DC24D2E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AB363B-C590-4714-9156-0E9DC24D2E42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

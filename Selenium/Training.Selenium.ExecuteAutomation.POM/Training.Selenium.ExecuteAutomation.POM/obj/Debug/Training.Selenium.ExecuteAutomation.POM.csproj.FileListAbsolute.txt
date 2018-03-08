@@ -1,0 +1,12 @@
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\Training.Selenium.ExecuteAutomation.POM.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\Training.Selenium.ExecuteAutomation.POM.pdb
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\AngleSharp.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\WebDriver.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\WebDriver.Support.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\WebDriverManager.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\AngleSharp.xml
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\WebDriver.xml
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\bin\Debug\WebDriver.Support.xml
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\obj\Debug\Training.Selenium.ExecuteAutomation.POM.csprojResolveAssemblyReference.cache
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\obj\Debug\Training.Selenium.ExecuteAutomation.POM.dll
+D:\_TRAINING\Selenium\Training.Selenium.ExecuteAutomation.POM\Training.Selenium.ExecuteAutomation.POM\obj\Debug\Training.Selenium.ExecuteAutomation.POM.pdb

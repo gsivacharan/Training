@@ -1,0 +1,38 @@
+14:26:49,997 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - InitiateTest begins
+14:26:55,495 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - loginPage object created.
+14:27:05,266 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Username = 'sivacharan' and Password = 'friend' as passed.
+14:27:05,311 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Switch to IFrame
+14:27:05,492 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Clicked on Company Menu Link.
+14:27:15,496 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Test Wait for 10 seconds.
+14:27:15,687 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company link clicked.
+14:27:15,694 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company object Created.
+14:29:27,638 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - InitiateTest begins
+14:29:33,186 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - loginPage object created.
+14:29:42,588 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Username = 'sivacharan' and Password = 'friend' as passed.
+14:29:42,635 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Switch to IFrame
+14:29:42,819 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Clicked on Company Menu Link.
+14:29:52,824 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Test Wait for 10 seconds.
+14:29:52,971 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company link clicked.
+14:29:52,979 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company object Created.
+14:30:02,985 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Waited for 10 senconds.
+14:30:12,355 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Save Button Clicked.
+14:30:12,360 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company Added.
+16:30:53,850 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - LoginTest Begins
+18:55:11,297 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - InitiateTest begins
+18:55:16,457 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - loginPage object created.
+18:55:24,404 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Username = 'sivacharan' and Password = 'friend' as passed.
+18:55:24,458 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Switch to IFrame
+18:55:24,659 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Clicked on Company Menu Link.
+18:55:34,667 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Test Wait for 10 seconds.
+18:55:34,834 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company link clicked.
+21:41:54,173 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - InitiateTest begins
+21:43:39,371 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - loginPage object created.
+21:44:54,251 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Username = 'sivacharan' and Password = 'friend' as passed.
+21:45:12,441 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Switch to IFrame
+21:47:03,460 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Clicked on Company Menu Link.
+21:47:17,632 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Test Wait for 10 seconds.
+21:47:34,219 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company link clicked.
+21:48:01,757 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company object Created.
+21:48:14,075 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Waited for 10 senconds.
+21:49:11,740 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - Save Button Clicked.
+21:49:29,521 [Training.Selenium.PageFrameWork.Helper.TestBase] INFO - New Company Added.
